@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h2>Quiz</h2>
+            <form id="quizForm">
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username" required>
+                
+                <label for="question">Frage:</label>
+                <input type="text" id="question" value="Was ist die Hauptstadt von Frankreich?" readonly>
+                
+                <label for="answer">Antwort:</label>
+                <input type="text" id="answer" required>
+                
+                <button type="submit" id="submitBtn">Senden</button>
+            </form>
+            
+            <div id="tableContainer">
+                <h3>Antworten</h3>
+                <table id="responseTable">
+                    <tr>
+                        <th>Benutzername</th>
+                        <th>Antwort</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
